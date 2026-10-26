@@ -1,0 +1,38 @@
+[
+  {
+    "id": "KB-001",
+    "title": "Duplicate payment review",
+    "text": "A suspected duplicate payment should be escalated to Payment Operations after the transaction IDs and amounts are compared. Do not reverse either transaction until the review is complete.",
+    "access": ["general", "operations"]
+  },
+  {
+    "id": "KB-002",
+    "title": "Failed payment status",
+    "text": "A failed payment remains in review until the processor response code is recorded. The support team can tell the customer that the payment is under review without promising a settlement time.",
+    "access": ["general", "operations"]
+  },
+  {
+    "id": "KB-003",
+    "title": "Payment Operations retry procedure",
+    "text": "Payment Operations may retry a failed payment once after confirming that the processor did not settle it. Record the original transaction ID and the new attempt ID in the case log.",
+    "access": ["operations"]
+  },
+  {
+    "id": "KB-004",
+    "title": "Refund requests",
+    "text": "A refund request must reference the original settled payment. Support should collect the transaction ID and route the request to the refunds queue.",
+    "access": ["general", "operations"]
+  },
+  {
+    "id": "KB-005",
+    "title": "Payment Operations reconciliation cutoff",
+    "text": "Payment Operations starts daily reconciliation after the 18:00 UTC ledger cutoff. Exceptions found after that cutoff enter the next day's review queue.",
+    "access": ["operations"]
+  },
+  {
+    "id": "KB-006",
+    "title": "Customer status updates",
+    "text": "Customer status updates should describe the current review state and the next owner. Do not state that a payment has settled until the processor confirms settlement.",
+    "access": ["general", "operations"]
+  }
+]
